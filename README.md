@@ -1,93 +1,147 @@
-# Sleep Debt Economy
+# 💤 Sleep Debt Economy
 
-> Quantifying the hidden cost of lost sleep — an interactive data storytelling experience.
+> **Quantifying the hidden cost of lost sleep — an interactive data storytelling experience.**
 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+🌐 **Live Site:** https://paq67.github.io/sleep-index/
 
-## Overview
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat\&logo=html5\&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat\&logo=css3\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat\&logo=javascript\&logoColor=black)
 
-**Sleep Debt Economy** is a premium, dark-themed data storytelling website that explores the economic and health costs of sleep deprivation. It features:
+---
 
-- **Story Tab** — A narrative-driven vertical scroll experience with animated charts, key findings, and visual insights.
-- **Notebook Tab** — A styled code viewer showcasing the Python analysis behind the data.
+## 📖 Overview
 
-## Features
+**Sleep Debt Economy** is a premium, dark-themed interactive data storytelling website that explores the **economic, cognitive, and health costs of sleep deprivation**.
 
-- Cursor-following gradient glow effect
-- Smooth scroll-triggered reveal animations
-- Interactive histogram, scatter plot & horizontal bar charts
-- Responsive design (mobile, tablet, desktop)
-- Keyboard navigation (`1` for Story, `2` for Notebook)
-- Premium dark UI with orange accent palette
+The project blends **narrative design + data visualization** to communicate insights in a visually immersive format.
 
+It includes two primary experiences:
 
-```
+* **🧭 Story Tab** — A scroll-driven narrative with animated charts and key insights
+* **📓 Notebook Tab** — A styled code viewer displaying the Python analysis workflow
 
-## Getting Started
+---
+
+## ✨ Key Features
+
+* 🎯 Narrative-first storytelling layout
+* 🌙 Premium dark UI with orange accent palette
+* 🖱️ Cursor-following gradient glow effect
+* 🎬 Smooth scroll-triggered reveal animations
+* 📊 Interactive charts
+
+  * Histogram (sleep distribution)
+  * Scatter plot (sleep vs productivity)
+  * Horizontal bar charts (risk factors)
+* 📱 Fully responsive (mobile, tablet, desktop)
+* ⌨️ Keyboard navigation
+
+  * Press **1 → Story**
+  * Press **2 → Notebook**
+
+---
+
+## 🚀 Getting Started
 
 ### Run Locally
 
-No build tools needed — just open `index.html` in your browser:
+No build tools required — open directly in your browser.
 
 ```bash
-# Clone the repository
+# Clone repository
 git clone https://github.com/<your-username>/sleep-debt-economy.git
 
-# Open in browser
+# Navigate to folder
 cd sleep-debt-economy
+
+# Open file
 start index.html        # Windows
 open index.html         # macOS
 xdg-open index.html     # Linux
 ```
 
-### Deploy to GitHub Pages
+---
 
-1. **Create a new repository** on GitHub named `sleep-debt-economy`.
-2. **Push the code:**
+### 🌍 Deploy on GitHub Pages
 
-   ```bash
-   cd sleep-debt-economy
-   git init
-   git add .
-   git commit -m "Initial commit: Sleep Debt Economy"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/sleep-debt-economy.git
-   git push -u origin main
-   ```
+1. Create a repository named **sleep-debt-economy**
+2. Push your code:
 
-3. **Enable GitHub Pages:**
-   - Go to your repo → **Settings** → **Pages**
-   - Under **Source**, select **Deploy from a branch**
-   - Choose **main** branch and **/ (root)** folder
-   - Click **Save**
+```bash
+git init
+git add .
+git commit -m "Initial commit: Sleep Debt Economy"
+git branch -M main
+git remote add origin https://github.com/<your-username>/sleep-debt-economy.git
+git push -u origin main
+```
 
-4. Your site will be live in ~1 minute at `https://<your-username>.github.io/sleep-debt-economy/`
+3. Enable **GitHub Pages**
 
-## Project Structure
+* Go to **Settings → Pages**
+* Source: **Deploy from branch**
+* Branch: **main / root**
+* Save
+
+Your site will be live at:
+
+```
+https://<your-username>.github.io/sleep-debt-economy/
+```
+
+---
+
+## 🗂️ Project Structure
 
 ```
 sleep-debt-economy/
-├── index.html      # Main HTML — Story & Notebook tabs
-├── styles.css      # Complete design system & responsive styles
-├── script.js       # Animations, tab switching, chart rendering
-├── README.md       # This file
+├── index.html      # Main app (Story + Notebook)
+├── styles.css      # Design system & responsive layout
+├── script.js       # Interactions, charts, animations
+├── README.md       # Documentation
 ├── LICENSE         # MIT License
-└── .gitignore      # Git ignore rules
+└── .gitignore
 ```
 
-## Tech Stack
+---
 
-| Layer   | Technology                  |
-| ------- | --------------------------- |
-| Structure | Semantic HTML5             |
-| Styling   | Vanilla CSS (custom props) |
-| Logic     | Vanilla JavaScript (ES6+) |
-| Fonts     | Inter, JetBrains Mono (Google Fonts) |
+## 🧱 Tech Stack
 
-## License
+| Layer         | Technology                        |
+| ------------- | --------------------------------- |
+| Structure     | Semantic HTML5                    |
+| Styling       | Vanilla CSS (Custom Properties)   |
+| Interactivity | Vanilla JavaScript (ES6+)         |
+| Visualization | Canvas / Chart.js (if applicable) |
+| Typography    | Inter + JetBrains Mono            |
 
-This project is licensed under the [MIT License](LICENSE).
+---
 
+## 🎯 Purpose
 
+This project demonstrates how **data storytelling + UI design** can transform raw analysis into an engaging, insight-driven experience.
+
+It is designed as:
+
+* A portfolio project
+* A storytelling experiment
+* A template for future narrative dashboards
+
+---
+
+## 📜 License
+
+Licensed under the **MIT License** — see [`LICENSE`](LICENSE) for details.
+
+---
+
+## 🙌 Acknowledgements
+
+* Public sleep health datasets
+* Data visualization inspiration from modern scrollytelling experiences
+* Open-source community tools and design patterns
+
+---
+
+⭐ If you found this project interesting, consider giving it a star!
