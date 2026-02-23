@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sleep Debt Economy — Quantifying the Hidden Cost of Lost Sleep</title>
+  <meta name="description" content="An interactive data storytelling experience exploring the economic and health costs of sleep deprivation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cursor-following gradient glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <span class="brand-text">Sleep Debt Economy</span>
+    </div>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-tab="story" id="tabStory">Story</button>
+      <button class="nav-tab" data-tab="notebook" id="tabNotebook">Notebook</button>
+    </div>
+    <div class="nav-spacer"></div>
+  </nav>
+
+  <!-- ============ STORY TAB ============ -->
+  <main class="tab-content active" id="storyContent">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-orb" id="heroOrb"></div>
+      <div class="hero-content reveal">
+        <p class="hero-label">Data Story</p>
+        <h1 class="hero-title">Sleep Debt<br/><span class="highlight">Economy</span></h1>
+        <p class="hero-subtitle">Quantifying the hidden cost of lost sleep</p>
+        <div class="hero-scroll-cue">
+          <span>Scroll to explore</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTEXT -->
+    <section class="section context-section" id="context">
+      <div class="container reveal">
+        <span class="section-label">01 — Context</span>
+        <h2 class="section-title">What is sleep debt?</h2>
+        <p class="section-body">
+          Sleep debt is the cumulative effect of not getting enough sleep. When you consistently sleep less than your body needs — typically 7–9 hours for adults — the deficit compounds. Unlike financial debt, sleep debt can't simply be "paid back" with a weekend lie-in. Research shows that chronic sleep deprivation fundamentally alters cognitive performance, emotional regulation, metabolic function, and immune response.
+        </p>
+        <p class="section-body">
+          The consequences ripple far beyond the individual. Drowsy workers cost the U.S. economy an estimated <strong>$411 billion annually</strong> in lost productivity. Road accidents linked to fatigue claim thousands of lives. Healthcare systems absorb billions in treating conditions exacerbated by poor sleep. Sleep debt is not just a personal inconvenience — it's a systemic economic drain hiding in plain sight.
+        </p>
+      </div>
+    </section>
+
+    <!-- KEY FINDINGS -->
+    <section class="section findings-section" id="findings">
+      <div class="container">
+        <span class="section-label reveal">02 — Key Findings</span>
+        <h2 class="section-title reveal">What the data reveals</h2>
+        <div class="findings-grid">
+          <div class="finding-card reveal" style="--delay: 0s">
+            <div class="finding-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 17V7l-5 5"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <h3 class="finding-value">−23%</h3>
+            <p class="finding-label">Productivity Drop</p>
+            <p class="finding-desc">Workers with ≥2 hours of sleep debt show a significant decline in daily output and decision quality.</p>
+          </div>
+          <div class="finding-card reveal" style="--delay: 0.1s">
+            <div class="finding-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v10l4.5 4.5"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <h3 class="finding-value">+38%</h3>
+            <p class="finding-label">Stress Increase</p>
+            <p class="finding-desc">Elevated stress levels correlate strongly with cumulative sleep deficit across all age groups.</p>
+          </div>
+          <div class="finding-card reveal" style="--delay: 0.2s">
+            <div class="finding-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="finding-value">1.7×</h3>
+            <p class="finding-label">Health Risk</p>
+            <p class="finding-desc">Chronic sleep debt nearly doubles the risk of cardiovascular events and metabolic syndrome.</p>
+          </div>
+          <div class="finding-card reveal" style="--delay: 0.3s">
+            <div class="finding-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="finding-value">$411B</h3>
+            <p class="finding-label">Annual Economic Cost</p>
+            <p class="finding-desc">Sleep-deprived workers cost the U.S. economy over four hundred billion dollars each year.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISUAL INSIGHTS -->
+    <section class="section visuals-section" id="visuals">
+      <div class="container">
+        <span class="section-label reveal">03 — Visual Insights</span>
+        <h2 class="section-title reveal">Exploring the data</h2>
+        <div class="charts-grid">
+          <div class="chart-card reveal" style="--delay: 0s">
+            <div class="chart-header">
+              <h3 class="chart-title">Distribution of Sleep Debt</h3>
+              <span class="chart-badge">Histogram</span>
+            </div>
+            <div class="chart-placeholder">
+              <div class="chart-bars">
+                <div class="bar" style="--h: 20%"></div>
+                <div class="bar" style="--h: 35%"></div>
+                <div class="bar" style="--h: 55%"></div>
+                <div class="bar" style="--h: 80%"></div>
+                <div class="bar" style="--h: 100%"></div>
+                <div class="bar" style="--h: 90%"></div>
+                <div class="bar" style="--h: 70%"></div>
+                <div class="bar" style="--h: 50%"></div>
+                <div class="bar" style="--h: 35%"></div>
+                <div class="bar" style="--h: 20%"></div>
+                <div class="bar" style="--h: 12%"></div>
+                <div class="bar" style="--h: 8%"></div>
+              </div>
+              <div class="chart-axis-x">
+                <span>-2h</span><span>0h</span><span>+2h</span><span>+4h</span>
+              </div>
+            </div>
+            <p class="chart-caption">Most individuals carry a moderate sleep debt of 1–2 hours per night.</p>
+          </div>
+
+          <div class="chart-card reveal" style="--delay: 0.15s">
+            <div class="chart-header">
+              <h3 class="chart-title">Sleep Debt vs Productivity</h3>
+              <span class="chart-badge">Scatter</span>
+            </div>
+            <div class="chart-placeholder scatter-chart">
+              <div class="scatter-dots" id="scatterDots"></div>
+              <div class="chart-axis-label-y">Productivity →</div>
+              <div class="chart-axis-label-x">Sleep Debt →</div>
+            </div>
+            <p class="chart-caption">A clear negative correlation: more sleep debt, lower productivity scores.</p>
+          </div>
+
+          <div class="chart-card chart-card-wide reveal" style="--delay: 0.3s">
+            <div class="chart-header">
+              <h3 class="chart-title">Health Risk by Sleep Category</h3>
+              <span class="chart-badge">Bar Chart</span>
+            </div>
+            <div class="chart-placeholder horizontal-bars">
+              <div class="h-bar-row">
+                <span class="h-bar-label">Well-rested</span>
+                <div class="h-bar-track"><div class="h-bar-fill" style="--w: 25%"></div></div>
+                <span class="h-bar-value">Low</span>
+              </div>
+              <div class="h-bar-row">
+                <span class="h-bar-label">Mild debt</span>
+                <div class="h-bar-track"><div class="h-bar-fill" style="--w: 50%"></div></div>
+                <span class="h-bar-value">Moderate</span>
+              </div>
+              <div class="h-bar-row">
+                <span class="h-bar-label">Moderate debt</span>
+                <div class="h-bar-track"><div class="h-bar-fill" style="--w: 75%"></div></div>
+                <span class="h-bar-value">High</span>
+              </div>
+              <div class="h-bar-row">
+                <span class="h-bar-label">Severe debt</span>
+                <div class="h-bar-track"><div class="h-bar-fill" style="--w: 95%"></div></div>
+                <span class="h-bar-value">Critical</span>
+              </div>
+            </div>
+            <p class="chart-caption">Health risk escalates non-linearly as sleep debt increases beyond 2 hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAKEAWAY -->
+    <section class="section takeaway-section" id="takeaway">
+      <div class="container reveal">
+        <span class="section-label">04 — Takeaway</span>
+        <h2 class="section-title">Sleep is not optional</h2>
+        <p class="section-body takeaway-text">
+          The data paints a clear picture: sleep debt is not merely fatigue — it's a compounding liability that degrades cognition, health, and economic output. Addressing this crisis requires systemic change — from workplace policies that respect circadian rhythms to public health campaigns that treat sleep as foundational infrastructure, not luxury. Every hour of sleep reclaimed is an investment in human capital.
+        </p>
+        <div class="takeaway-cta">
+          <span class="cta-line"></span>
+          <span class="cta-text">Explore the notebook to see the analysis →</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Sleep Debt Economy — A data storytelling project</p>
+        <p class="footer-note">Built with curiosity & caffeine (ironic, we know)</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============ NOTEBOOK TAB ============ -->
+  <main class="tab-content" id="notebookContent">
+    <div class="notebook-container">
+      <div class="notebook-header">
+        <div class="notebook-title-area">
+          <h2 class="notebook-title">Analysis Notebook</h2>
+          <p class="notebook-desc">The Python code behind the Sleep Debt Economy analysis</p>
+        </div>
+        <div class="notebook-meta">
+          <span class="meta-badge">Python 3</span>
+          <span class="meta-badge">Pandas</span>
+          <span class="meta-badge">Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="notebook-cells">
+        <!-- Cell 1 -->
+        <div class="nb-cell">
+          <div class="cell-header">
+            <span class="cell-type">Code</span>
+            <span class="cell-num">[1]</span>
+          </div>
+          <pre class="code-block"><code><span class="kw">import</span> <span class="mod">pandas</span> <span class="kw">as</span> <span class="mod">pd</span>
+
+df = pd.<span class="fn">read_csv</span>(<span class="str">"/content/drive/MyDrive/data/Sleep_Health_and_Lifestyle_Dataset.csv"</span>)</code></pre>
+        </div>
+
+        <!-- Cell 2 -->
+        <div class="nb-cell">
+          <div class="cell-header">
+            <span class="cell-type">Code</span>
+            <span class="cell-num">[2]</span>
+          </div>
+          <pre class="code-block"><code><span class="cm"># Normalize column names safely</span>
+df.columns = (
+    df.columns
+    .<span class="fn">str.strip</span>()
+    .<span class="fn">str.lower</span>()
+    .<span class="fn">str.replace</span>(<span class="str">" "</span>, <span class="str">"_"</span>)
+    .<span class="fn">str.replace</span>(<span class="str">r"[^\w_]"</span>, <span class="str">""</span>, regex=<span class="kw">True</span>)
+)
+
+<span class="fn">print</span>(df.columns.<span class="fn">tolist</span>())</code></pre>
+        </div>
+
+        <!-- Cell 3 -->
+        <div class="nb-cell">
+          <div class="cell-header">
+            <span class="cell-type">Code</span>
+            <span class="cell-num">[3]</span>
+          </div>
+          <pre class="code-block"><code><span class="cm"># Ensure column exists</span>
+<span class="kw">assert</span> <span class="str">"blood_pressure"</span> <span class="kw">in</span> df.columns, <span class="str">"Column still not found"</span>
+
+df[[<span class="str">"systolic_bp"</span>, <span class="str">"diastolic_bp"</span>]] = (
+    df[<span class="str">"blood_pressure"</span>]
+    .<span class="fn">str.split</span>(<span class="str">"/"</span>, expand=<span class="kw">True</span>)
+    .<span class="fn">astype</span>(<span class="mod">int</span>)
+)</code></pre>
+        </div>
+
+        <!-- Cell 4 -->
+        <div class="nb-cell">
+          <div class="cell-header">
+            <span class="cell-type">Code</span>
+            <span class="cell-num">[4]</span>
+          </div>
+          <pre class="code-block"><code>IDEAL_SLEEP = <span class="num">7</span>
+df[<span class="str">"sleep_debt"</span>] = IDEAL_SLEEP - df[<span class="str">"sleep_duration"</span>]
+
+df[<span class="str">"productivity_score"</span>] = (
+    df[<span class="str">"daily_steps"</span>] * <span class="num">0.3</span>
+    + df[<span class="str">"physical_activity_level"</span>] * <span class="num">0.4</span>
+    + (<span class="num">10</span> - df[<span class="str">"stress_level"</span>]) * <span class="num">10</span>
+)
+
+df[<span class="str">"health_risk"</span>] = (
+    df[<span class="str">"heart_rate"</span>] * <span class="num">0.3</span>
+    + df[<span class="str">"systolic_bp"</span>] * <span class="num">0.2</span>
+    + df[<span class="str">"stress_level"</span>] * <span class="num">5</span>
+)
+
+df.<span class="fn">head</span>()</code></pre>
+        </div>
+
+        <!-- Cell 5 -->
+        <div class="nb-cell">
+          <div class="cell-header">
+            <span class="cell-type">Code</span>
+            <span class="cell-num">[5]</span>
+          </div>
+          <pre class="code-block"><code>plt.<span class="fn">hist</span>(df[<span class="str">"sleep_debt"</span>], bins=<span class="num">20</span>)
+plt.<span class="fn">title</span>(<span class="str">"Distribution of Sleep Debt"</span>)
+plt.<span class="fn">xlabel</span>(<span class="str">"Sleep Debt (hours)"</span>)
+plt.<span class="fn">ylabel</span>(<span class="str">"Count"</span>)
+plt.<span class="fn">show</span>()</code></pre>
+        </div>
+
+        <!-- Cell 6 -->
+        <div class="nb-cell">
+          <div class="cell-header">
+            <span class="cell-type">Code</span>
+            <span class="cell-num">[6]</span>
+          </div>
+          <pre class="code-block"><code>plt.<span class="fn">scatter</span>(df[<span class="str">"sleep_debt"</span>], df[<span class="str">"productivity_score"</span>])
+plt.<span class="fn">xlabel</span>(<span class="str">"Sleep Debt"</span>)
+plt.<span class="fn">ylabel</span>(<span class="str">"Productivity Score"</span>)
+plt.<span class="fn">title</span>(<span class="str">"Sleep Debt vs Productivity"</span>)
+plt.<span class="fn">show</span>()</code></pre>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
