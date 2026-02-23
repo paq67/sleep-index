@@ -22,12 +22,7 @@
 - Keyboard navigation (`1` for Story, `2` for Notebook)
 - Premium dark UI with orange accent palette
 
-## Live Demo
 
-After deploying to GitHub Pages, your site will be live at:
-
-```
-https://<your-username>.github.io/sleep-debt-economy/
 ```
 
 ## Getting Started
@@ -94,3 +89,4 @@ sleep-debt-economy/
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
