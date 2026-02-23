@@ -2,7 +2,7 @@
 
 > **Quantifying the hidden cost of lost sleep — an interactive data storytelling experience.**
 
-🌐 **Live Site:** https://paq67.github.io/sleep-index/
+🌐 **Live Demo:** https://paq67.github.io/sleep-index/
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat\&logo=html5\&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat\&logo=css3\&logoColor=white)
@@ -12,33 +12,36 @@
 
 ## 📖 Overview
 
-**Sleep Debt Economy** is a premium, dark-themed interactive data storytelling website that explores the **economic, cognitive, and health costs of sleep deprivation**.
+**Sleep Debt Economy** is a premium dark-themed interactive storytelling website that explores how insufficient sleep impacts **health, productivity, and economic outcomes**.
 
-The project blends **narrative design + data visualization** to communicate insights in a visually immersive format.
+The experience blends narrative design with data visualization to turn a lifestyle dataset into an engaging, insight-driven story.
 
-It includes two primary experiences:
+### The Experience
 
-* **🧭 Story Tab** — A scroll-driven narrative with animated charts and key insights
-* **📓 Notebook Tab** — A styled code viewer displaying the Python analysis workflow
+* 🧭 **Story Tab**
+  A scrollytelling journey with animated charts, insights, and key findings.
+
+* 📓 **Notebook Tab**
+  A clean, styled code viewer that showcases the Python analysis pipeline behind the visuals.
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
-* 🎯 Narrative-first storytelling layout
-* 🌙 Premium dark UI with orange accent palette
+* 🌑 Premium dark UI with orange accent palette
 * 🖱️ Cursor-following gradient glow effect
-* 🎬 Smooth scroll-triggered reveal animations
-* 📊 Interactive charts
+* 🎬 Scroll-triggered reveal animations
+* 📊 Interactive visualizations
 
   * Histogram (sleep distribution)
-  * Scatter plot (sleep vs productivity)
-  * Horizontal bar charts (risk factors)
+  * Scatter plot (sleep vs productivity/health)
+  * Horizontal bar charts (comparisons & rankings)
 * 📱 Fully responsive (mobile, tablet, desktop)
 * ⌨️ Keyboard navigation
 
   * Press **1 → Story**
   * Press **2 → Notebook**
+* ⚡ Lightweight — no frameworks or build tools
 
 ---
 
@@ -46,27 +49,39 @@ It includes two primary experiences:
 
 ### Run Locally
 
-No build tools required — open directly in your browser.
+No dependencies required — simply open the HTML file.
 
 ```bash
-# Clone repository
+# Clone the repository
 git clone https://github.com/<your-username>/sleep-debt-economy.git
 
-# Navigate to folder
+# Navigate into the folder
 cd sleep-debt-economy
 
-# Open file
+# Open in your browser
 start index.html        # Windows
 open index.html         # macOS
 xdg-open index.html     # Linux
 ```
 
+Or serve locally:
+
+```bash
+# Python
+python -m http.server 3000
+
+# Node
+npx serve .
+```
+
+Then visit 👉 http://localhost:8080
+
 ---
 
-### 🌍 Deploy on GitHub Pages
+## 🌍 Deployment (GitHub Pages)
 
 1. Create a repository named **sleep-debt-economy**
-2. Push your code:
+2. Push your project
 
 ```bash
 git init
@@ -80,8 +95,8 @@ git push -u origin main
 3. Enable **GitHub Pages**
 
 * Go to **Settings → Pages**
-* Source: **Deploy from branch**
-* Branch: **main / root**
+* Select **Deploy from a branch**
+* Choose **main / (root)**
 * Save
 
 Your site will be live at:
@@ -96,51 +111,91 @@ https://<your-username>.github.io/sleep-debt-economy/
 
 ```
 sleep-debt-economy/
-├── index.html      # Main app (Story + Notebook)
-├── styles.css      # Design system & responsive layout
-├── script.js       # Interactions, charts, animations
-├── README.md       # Documentation
+├── index.html      # Story + Notebook interface
+├── styles.css      # Design system & layout
+├── script.js       # Interactions, animations, charts
+├── README.md       # Project documentation
 ├── LICENSE         # MIT License
 └── .gitignore
 ```
 
 ---
 
-## 🧱 Tech Stack
+## 🧠 Data & Analysis
 
-| Layer         | Technology                        |
-| ------------- | --------------------------------- |
-| Structure     | Semantic HTML5                    |
-| Styling       | Vanilla CSS (Custom Properties)   |
-| Interactivity | Vanilla JavaScript (ES6+)         |
-| Visualization | Canvas / Chart.js (if applicable) |
-| Typography    | Inter + JetBrains Mono            |
+The visualizations are based on a sleep health and lifestyle dataset exploring relationships between:
+
+* Sleep duration
+* Stress levels
+* Physical activity
+* Productivity indicators
+* Health risk factors
+
+Python (Pandas + visualization libraries) was used to generate insights that informed the narrative.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer         | Technology                      |
+| ------------- | ------------------------------- |
+| Structure     | Semantic HTML5                  |
+| Styling       | Vanilla CSS (custom properties) |
+| Logic         | Vanilla JavaScript (ES6+)       |
+| Typography    | Inter & JetBrains Mono          |
+| Visualization | Canvas / SVG charts             |
 
 ---
 
 ## 🎯 Purpose
 
-This project demonstrates how **data storytelling + UI design** can transform raw analysis into an engaging, insight-driven experience.
+This project demonstrates how **data storytelling can make personal health data relatable**, translating raw numbers into a narrative about:
 
-It is designed as:
+* The economic cost of fatigue
+* Lifestyle trade-offs
+* Long-term wellbeing impacts
 
-* A portfolio project
-* A storytelling experiment
-* A template for future narrative dashboards
+It serves as both:
 
----
-
-## 📜 License
-
-Licensed under the **MIT License** — see [`LICENSE`](LICENSE) for details.
+* 📊 A portfolio data storytelling project
+* 🧪 A UI/UX experiment in scrollytelling
 
 ---
 
-## 🙌 Acknowledgements
+## 🤝 Contributing
 
-* Public sleep health datasets
-* Data visualization inspiration from modern scrollytelling experiences
-* Open-source community tools and design patterns
+Contributions are welcome!
+
+You can help by:
+
+* Adding new datasets (e.g., productivity metrics)
+* Improving chart interactivity
+* Enhancing accessibility
+* Adding more narrative sections
+* Optimizing performance
+
+### Steps
+
+1. Fork the repo
+2. Create a feature branch
+
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit changes
+4. Push and open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the `LICENSE` file for details.
+
+---
+
+## 💡 Inspiration
+
+Inspired by narrative data projects like economic indexes and lifestyle analytics dashboards that transform everyday metrics into compelling visual stories.
 
 ---
 
